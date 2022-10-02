@@ -9,7 +9,7 @@ RUN mvn package
 RUN mkdir /usr/local/tomcat/webapps/hello-1.0
 RUN unzip /tmp/boxfuse-sample-java-war-hello/target/hello-1.0.war -d /usr/local/tomcat/webapps/hello-1.0
 RUN rm -rf boxfuse-sample-java-war-hello
-EXPOSE 80/tcp
+EXPOSE 8080/tcp
 
 
 
